@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Главная</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="stylesheet" href="css/noUislider.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<!--Header-->
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="logo header__logo">
+						<img src="images/icon/logo.svg" alt="EDK Кредитный потребительский кооператив" width="106" height="40">
+						<span>Кредитный потребительский кооператив</span>
+					</a>
+					<div class="header__panel" data-menu>
+						<nav class="nav header__menu">
+							<ul class="nav__list list-reset">
+								<li class="nav__item">
+									<a href="#" class="nav__link">
+										<span>Виды займов</span>
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+											<path d="M3 6L8 11L13 6" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+										</svg>
+									</a>
+									<div class="nav__submenu">
+										<ul class="list-reset">
+											<li>
+												<a href="saving.html">
+													<img src="images/icon/sber.svg" alt="" width="32" height="32">
+													<span>Сберегательная программа до 13% годовых</span>
+												</a>
+											</li>
+											<li>
+												<a href="housing.html">
+													<img src="images/icon/zaym.svg" alt="" width="32" height="32">
+													<span>Займы под залог недвижимости</span>
+												</a>
+											</li>
+											<li>
+												<a href="pts.html">
+													<img src="images/icon/avto.svg" alt="" width="32" height="32">
+													<span>Займы под залог авто</span>
+												</a>
+											</li>
+											<li>
+												<a href="business.html">
+													<img src="images/icon/buisness.svg" alt="" width="32" height="32">
+													<span>Займы для бизнеса</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item">
+									<a href="membership.html" class="nav__link">
+										<span>Членство</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="about.html" class="nav__link">
+										<span>О нас</span>
+									</a>
+								</li>
+								<li class="nav__item">
+									<a href="contacts.html" class="nav__link">
+										<span>Контакты</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<button type="button" class="b-btn b-btn--red js-show-popup" data-trigger="connection-popup">
+						Подать заявку
+					</button>
+					<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+						<span class="burger__line"></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<div class="hero__left">
+							<h1 class="hero__title">
+								Гарантированные решения и <span class="title-bg">поддержка</span> в достижении ваших финансовых
+								целей
+							</h1>
+							<ul class="hero__list list-reset">
+								<li class="hero__item">
+									Работаем с 2023 года
+								</li>
+								<li class="hero__item">
+									Состоим в СРО (<a href="http://nokkunion.ru" target="_blank">nokkunion.ru</a>)
+								</li>
+								<li class="hero__item">
+									Лицензия ЦБ РФ (<a href="https://www.cbr.ru/search/?Text=%D0%B5%D0%B4%D0%BA+%D1%84%D0%BE%D1%80%D1%83%D0%BC&Category=Any&Time=Any&DateFrom=&DateTo=" target="_blank">ссылка на реестр</a>)
+								</li>
+							</ul>
+							<a href="#application" class="b-btn b-btn--red js-smooth-scroll">Подать заявку</a>
+						</div>
+						<div class="hero__img">
+							<picture>
+								<source srcset="images/home/hero/hero.webp 1x, images/home/hero/hero@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/hero/hero.png 1x, images/home/hero/hero@2x.png 1.3x" type="image/png">
+								<img src="images/home/hero/hero.png" width="731" height="636" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="offers section-offset" data-slider="offers-slider">
+				<div class="container">
+					<div class="section-head">
+						<h2 class="section-title offers__title">
+							Что мы <span class="title-bg">предлагаем?</span>
+						</h2>
+					</div>
+					<div class="offers__wrap">
+						<div class="swiper swiper--offers">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="saving.html" class="card-item offers__item">
+										<div class="card-item__icon">
+											<img src="images/home/offers/item-1.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Сберегательная программа до 13% годовых
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="housing.html" class="card-item offers__item">
+										<div class="card-item__icon">
+											<img src="images/home/offers/item-2.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Займы под залог недвижимости
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="pts.html" class="card-item offers__item">
+										<div class="card-item__icon">
+											<img src="images/home/offers/item-3.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Займы под залог авто
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="business.html" class="card-item offers__item">
+										<div class="card-item__icon">
+											<img src="images/home/offers/item-4.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Займы для бизнеса
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages section-offset">
+				<div class="container">
+					<div class="section-head">
+						<h2 class="section-title advantages__title">
+							<span class="title-bg">Преимущества</span> членства в КПК «ЕДК Форум»
+						</h2>
+					</div>
+					<div class="advantages__wrap">
+						<ul class="advantages__list list-reset">
+							<li>
+								Открытая деятельность кооператива
+							</li>
+							<li>
+								Доступ к финансовой помощи кооператива — легко и быстро
+							</li>
+							<li>
+								Привлекательные условия для накоплений и займов
+							</li>
+							<li>
+								Современный подход к решению финансовых задач
+							</li>
+							<li>
+								Четкая политика выдачи займов
+							</li>
+						</ul>
+						<div class="advantages__img">
+							<picture>
+								<source srcset="images/home/advantages/advantages.webp 1x, images/home/advantages/advantages@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/home/advantages/advantages.png 1x, images/home/advantages/advantages@2x.png 1.3x" type="image/png">
+								<img src="images/home/advantages/advantages.png" width="727" height="483" alt="">
+							</picture>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="documents section-offset" data-slider="documents-slider">
+				<div class="container">
+					<div class="section-head documents__head">
+						<h2 class="section-title documents__title">
+							Документы
+						</h2>
+						<div class="swiper-nav">
+							<button type="button" class="documents-slider-prev swiper-button swiper-button-prev">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M18.125 10C18.125 9.65482 17.8452 9.375 17.5 9.375H2.50001C2.15483 9.375 1.87501 9.65482 1.87501 10C1.87501 10.3452 2.15483 10.625 2.50001 10.625H17.5C17.8452 10.625 18.125 10.3452 18.125 10Z" fill="#C3121B" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M7.94194 4.55806C7.69786 4.31398 7.30214 4.31398 7.05806 4.55806L2.05806 9.55806C1.81398 9.80214 1.81398 10.1979 2.05806 10.4419L7.05806 15.4419C7.30214 15.686 7.69786 15.686 7.94194 15.4419C8.18602 15.1979 8.18602 14.8021 7.94194 14.5581L3.38388 10L7.94194 5.44194C8.18602 5.19786 8.18602 4.80214 7.94194 4.55806Z" fill="#C3121B" />
+								</svg>
+							</button>
+							<div class="swiper-pagination"></div>
+							<button type="button" class="documents-slider-next swiper-button swiper-button-next">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="documents__wrap">
+						<div class="swiper swiper--documents">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="./docs/Ystav_EDK.pdf" download class="card-item documents__item">
+										<div class="card-item__icon">
+											<img src="images/icon/document.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Устав КПК «ЕДК Форум»
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./docs/OGRN.pdf" download class="card-item documents__item">
+										<div class="card-item__icon">
+											<img src="images/icon/document.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Свидетельство ОГРН/ИНН
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./docs/YGRL.pdf" download class="card-item documents__item">
+										<div class="card-item__icon">
+											<img src="images/icon/document.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Выписка ЕГРЮЛ
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="./docs/Payshik-KPK.pdf" download class="card-item documents__item">
+										<div class="card-item__icon">
+											<img src="images/icon/document.svg" alt="" width="64" height="64">
+										</div>
+										<div class="card-item__text">
+											<p>
+												Договор пайщика с КПК
+											</p>
+										</div>
+										<div class="card-item__link">
+											<span>Подробнее</span>
+											<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M1.875 10C1.875 9.65482 2.15482 9.375 2.5 9.375H17.5C17.8452 9.375 18.125 9.65482 18.125 10C18.125 10.3452 17.8452 10.625 17.5 10.625H2.5C2.15482 10.625 1.875 10.3452 1.875 10Z" fill="#C3121B" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M12.0581 4.55806C12.3021 4.31398 12.6979 4.31398 12.9419 4.55806L17.9419 9.55806C18.186 9.80214 18.186 10.1979 17.9419 10.4419L12.9419 15.4419C12.6979 15.686 12.3021 15.686 12.0581 15.4419C11.814 15.1979 11.814 14.8021 12.0581 14.5581L16.6161 10L12.0581 5.44194C11.814 5.19786 11.814 4.80214 12.0581 4.55806Z" fill="#C3121B" />
+											</svg>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="contacts section-offset">
+				<div class="container">
+					<div class="section-head">
+						<h2 class="section-title contacts__title">
+							Контактная <span class="title-bg">информация</span>
+						</h2>
+					</div>
+					<div class="contacts__gird">
+						<div class="contacts__map">
+							<div id="map" class="map" style="width: -1px;"></div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__icon">
+								<img src="images/icon/addres.svg" alt="" width="64" height="64">
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Юридический адрес / Фактический адрес
+								</div>
+								<div class="contacts__text">
+									Московская область, город Балашиха, Полевая д.3 помещение 2, каб. 15
+								</div>
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Режим работы
+								</div>
+								<ul class="contacts__list list-reset">
+									<li class="contacts__wrapper">
+										<div class="contacts__text">
+											Понедельник – пятница: 09.00 – 18.00
+										</div>
+									</li>
+									<li class="contacts__wrapper">
+										<div class="contacts__text">
+											Перерыв на обед: 13.00 – 14.00
+										</div>
+									</li>
+									<li class="contacts__wrapper">
+										<div class="contacts__text">
+											Выходной: суббота, воскресенье
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="contacts__item">
+							<div class="contacts__icon">
+								<img src="images/icon/mail.svg" alt="" width="64" height="64">
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Email
+								</div>
+								<a href="mailto:edk@kpk.ru" class="contacts__text">
+									edk@kpk.ru
+								</a>
+							</div>
+							<div class="contacts__wrap">
+								<div class="contacts__name">
+									Телефоны/факс:
+								</div>
+								<ul class="contacts__list list-reset">
+									<li class="contacts__wrapper">
+										<div class="contacts__text">
+											Горячая линия:
+										</div>
+										<a href="tel:+78003330638">7 (800) 333-06-38</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="application section-offset" id="application">
+				<div class="container">
+					<div class="section-head">
+						<h2 class="section-title application__title">
+							Заявка на <span class="title-bg">
+								вступление в КПК
+							</span>
+						</h2>
+					</div>
+					<div class="application-form">
+						<form action="#" class="form form--application" id="basic_form" autocomplete="off" novalidate="novalidate">
+							<div class="form__wrapper">
+								<div class="form__group">
+									<div class="form__item">
+										<label for="basic_name" class="form__label">
+											<span class="form__name">
+												Ваше имя
+											</span>
+											<input type="text" id="basic_name" class="form__input" autocomplete="off" placeholder="Ваше имя">
+										</label>
+										<div class="form__error">Заполните поле</div>
+									</div>
+									<div class="form__item">
+										<label for="#basic_number" class="form__label">
+											<span class="form__name">
+												Номер телефона
+											</span>
+											<input type="text" id="basic_number" class="form__input tel" autocomplete="off" placeholder="+7">
+										</label>
+										<div class="form__error">Заполните поле</div>
+									</div>
+								</div>
+								<div class="form__wrap">
+									<label for="" class="form__label">
+										<span class="form__name">
+											Комментарий
+										</span>
+										<textarea name="" id="" cols="30" rows="4" class="form__textarea"></textarea>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="b-btn b-btn--red">Подать заявку</button>
+						</form>
+						<div class="application-form__wrap">
+							<div class="application-form__text">
+								или позвоните по номеру телефона
+							</div>
+							<a href="tel:78003330638" class="application-form__link">7 (800) 333-06-38</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- Footer -->
+		<footer class="footer" id="footer">
+			<div class="container">
+				<div class="footer__copyright">
+					<span>© 2023 КПК «ЕДК Форум»</span>
+
+					<p>
+						Полное наименование: Кредитный потребительский кооператив «ЕДК Форум». Сокращённое наименование: КПК
+						«ЕДК Форум». ОГРН 1235000012642, ИНН 026812474329, КПК 501201001.
+						КПК «ЕДК Форум» является членом Ассоциации «Саморегулируемая организация «Национальное объединение
+						кредитных кооперативов»» (далее - СРО «НОКК», СРО). Дата приёма в члены СРО «НОКК» – 3 марта 2023 г.
+						Адрес СРО «НОКК»: 403877, Волгоградская область, г Камышин, ул Некрасова, д. 4А, этаж 2, помещ. 7 Адрес
+						официального сайта СРО «НОКК»: https://nokkunion.ru/
+						Потребитель финансовых услуг КПК «ЕДК Форум» (пайщик) вправе направить обращение финансовому
+						уполномоченному в соответствии со статьями 15-19 Федерального закона от 04 июня 2018г. № 123-ФЗ «Об
+						уполномоченном по правам потребителей финансовых услуг». Юридический адрес КПК «ЕДК Форум»: Московская
+						область, город Балашиха, Полевая д.3 помещение 2, каб. 15
+					</p>
+				</div>
+				<a href="./docs/Politika.pdf" download class="footer__link">
+					Политика защиты и обработки персональных данных
+				</a>
+			</div>
+		</footer>
+
+	</div>
+	<div class="overlay js-overlay"></div>
+	<div class="popup popup--connection js-popup" data-popup="connection-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<path d="M25 7L7 25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M25 25L7 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="application-form">
+				<h2 class="section-title">
+					Заявка на <span class="title-bg">
+						вступление в КПК
+					</span>
+				</h2>
+				<form action="#" class="form form--application" id="basic_form" autocomplete="off" novalidate="novalidate">
+					<div class="form__wrapper">
+						<div class="form__group">
+							<div class="form__item">
+								<label for="basic_name" class="form__label">
+									<span class="form__name">
+										Ваше имя
+									</span>
+									<input type="text" id="basic_name" class="form__input" autocomplete="off" placeholder="Ваше имя">
+								</label>
+								<div class="form__error">Заполните поле</div>
+							</div>
+							<div class="form__item">
+								<label for="#basic_number" class="form__label">
+									<span class="form__name">
+										Номер телефона
+									</span>
+									<input type="text" id="basic_number" class="form__input tel" autocomplete="off" placeholder="+7">
+								</label>
+								<div class="form__error">Заполните поле</div>
+							</div>
+						</div>
+						<div class="form__wrap">
+							<label for="" class="form__label">
+								<span class="form__name">
+									Комментарий
+								</span>
+								<textarea name="" id="" cols="30" rows="4" class="form__textarea"></textarea>
+							</label>
+						</div>
+					</div>
+					<button type="submit" class="b-btn b-btn--red">Подать заявку</button>
+				</form>
+				<div class="application-form__wrap">
+					<div class="application-form__text">
+						или позвоните по номеру телефона
+					</div>
+					<a href="tel:+78003330638" class="application-form__link">7 (800) 333-06-38</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--stage js-popup" data-popup="stage-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<path d="M25 7L7 25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M25 25L7 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="stage">
+				<div class="stage__text">
+					Для получения займа позвоните по номеру
+				</div>
+				<a href="tel:+78003330638" class="stage__link">7 (800) 333-06-38</a>
+			</div>
+		</div>
+	</div>
+	<div class="popup popup--success js-popup" data-popup="success-popup">
+		<button type="button" class="popup__close js-popup-close">
+			<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+				<path d="M25 7L7 25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				<path d="M25 25L7 7" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			</svg>
+		</button>
+		<div class="popup__wrap">
+			<div class="success">
+				<div class="success__icon">
+					<img src="images/icon/check.svg" alt="" width="120" height="120">
+				</div>
+				<div class="success__title">
+					Заявка успешно <span class="title-bg">отправлена</span>
+				</div>
+				<div class="success__text">
+					<p>
+						Наши специалисты свяжется с вами, когда заявка будет рассмотрена
+					</p>
+				</div>
+				<button type="button" class="b-btn b-btn--red js-popup-close">Понятно</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="js/slider.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=dab272a3-e76c-4c32-a3e7-22c8301a5ff6&lang=ru_RU">
+	</script>
+	<script>
+		function init() {
+			let center = [55.792032568920874, 37.93563];
+			let map = new ymaps.Map('map', {
+				center : center,
+				zoom   : 17
+			});
+			let placemark = new ymaps.Placemark([55.792032568920874, 37.93563], {}, {
+				iconLayout      : 'default#image',
+				iconImageHref   : './images/icon/pin.svg',
+				iconImageSize   : [51, 64],
+				iconImageOffset : [0, 0],
+			});
+			map.geoObjects.add(placemark);
+			map.controls.remove('geolocationControl'); // удаляем геолокацию
+			map.controls.remove('searchControl'); // удаляем поиск
+			map.controls.remove('trafficControl'); // удаляем контроль трафика
+			map.controls.remove('typeSelector'); // удаляем тип
+			map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+			// map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+			map.controls.remove('rulerControl'); // удаляем контрол правил
+			// map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+		}
+
+		ymaps.ready(init);
+	</script>
+</body>
+
+</html>
